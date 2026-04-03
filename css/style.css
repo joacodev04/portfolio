@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body BG */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: radial-gradient(
+        circle at 80% 50%,
+        #36d11333,
+        #00ffcc11,
+        #000000 60%
+    ),
+    #000;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header + Links */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.img-nav{
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+a { 
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+/* Contenido */
+.contenedor-inicio{
+    font-family: 'DM Sans', sans-serif;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.titulo {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+.titulo span {
+    color: #39FF14;
+}
+
+.hr-principal {
+    width: 80%;
+    border: none;
+    height: 4px;
+    background: #1a8561;
+}
+
+.info-principal {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 100px;
+    color: rgb(143, 141, 141);
+    padding: 60px;
+    width: 50%;
+}
+
+.img-principal{
+    margin-top: 100px;
+    position:relative;
+    width:50%;
+    min-height:460px;
+    margin-left:auto;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: absolute;
+    width: 450px;
+    border-radius: 15px;
+    transition: 0.4s;
+    box-shadow: 0 20px 30px #000;
+}
+
+.card2 {
+    transform: rotate(20deg);
+    top: 80px;
+    right: 80px;
+}
+
+.card3 {
+    transform: rotate(-25deg);
+    top: 120px;
+    right: 290px;
+}
+
+/* Botones Contactos */
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+.btn {
+  width: 100px;
+  height: 60px;
+  border: 1px solid #2a2a2a;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 22px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  border-color: #00ffcc;
+  color: #00ffcc;
+}
+
+/* Habilidades */
+.habilidades {
+    margin-top: 70px;
+}
+
+.h1-habilidades {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    color:#FFFFFF;
+    font:500 64px/1.1 system-ui,Segoe UI,Arial;
+  
+}
+
+.h1-habilidades span{
+    font-family: 'DM Sans', sans-serif;
+    color: #39FF14;
+}
+
+.hr-habilidades {
+    width: 40%;
+    margin: 14px auto 0;
+    border: 0;
+    height: 4px;
+    background: #1a8561;
+}
+
+.iconos {
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.iconos > div {
+    flex: 1;
+    height: 500px;
+    border: 1px solid #39FF14;
+    padding: 20px;
+    border-radius: 20px;
+    background: transparent;
+}
+
+.iconos h2 {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+.iconos i{
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.iconos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sobre mi */
+.sobremi {
+    font-family: 'DM Sans', sans-serif;
+    color: #39FF14;
+}
+
+.hr-sobremi {
+    width: 20%;
+    border: none;
+    height: 4px;
+    background: #ffffff;
+}
+
+.contenedor-sobremi {
+    font-family: 'DM Sans', sans-serif;
+    width: 50%;
+    color: rgb(143, 141, 141);
+    padding: 60px;
+    margin-top: 90px;
+    font-size: 30px;
+}
+
+.baesics {
+    color: #00B97C;
+    font-size: 30px;
+}
+
+.img-baesics {
+    position: relative;
+    top: 6px;
+    width: 30px;
+}
+
+.descargar-cv {
+    background: black;
+    border: 2px solid #39FF14;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #39FF14;
+    margin-top: 30px;
+    margin-left: 60px;
+}
