@@ -9,15 +9,9 @@ body {
     margin: 0;
     overflow-x: hidden;
     min-height: 100vh;
-    background: radial-gradient(
-        circle at 80% 50%,
-        #36d11333,
-        #00ffcc11,
-        #000000 60%
-    ),
-    #000;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /* Header + Links */
@@ -97,14 +91,15 @@ a {
 }
 
 .titulo span {
-    color: #39FF14;
+    color: #FFD700;
 }
 
 .hr-principal {
     width: 80%;
     border: none;
     height: 4px;
-    background: #1a8561;
+    background: #FFD700;
+    animation: glow 3s infinite;
 }
 
 .info-principal {
@@ -130,7 +125,12 @@ a {
     width: 450px;
     border-radius: 15px;
     transition: 0.4s;
-    box-shadow: 0 20px 30px #000;
+    box-shadow: 0 20px 30px #000, 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px #000, 0 0 30px rgba(255, 215, 0, 0.5);
 }
 
 .card2 {
@@ -167,8 +167,8 @@ a {
 }
 
 .btn:hover {
-  border-color: #00ffcc;
-  color: #00ffcc;
+  border-color: #FFD700;
+  color: #FFD700;
 }
 
 /* Habilidades */
@@ -187,7 +187,7 @@ a {
 
 .h1-habilidades span{
     font-family: 'DM Sans', sans-serif;
-    color: #39FF14;
+    color: #FFD700;
 }
 
 .hr-habilidades {
@@ -195,7 +195,8 @@ a {
     margin: 14px auto 0;
     border: 0;
     height: 4px;
-    background: #1a8561;
+    background: #FFD700;
+    animation: glow 3s infinite;
 }
 
 .iconos {
@@ -208,10 +209,11 @@ a {
 .iconos > div {
     flex: 1;
     height: 500px;
-    border: 1px solid #39FF14;
+    border: 1px solid #FFD700;
     padding: 20px;
     border-radius: 20px;
     background: transparent;
+    animation: glow 4s infinite;
 }
 
 .iconos h2 {
@@ -235,14 +237,15 @@ a {
 /* Sobre mi */
 .sobremi {
     font-family: 'DM Sans', sans-serif;
-    color: #39FF14;
+    color: #FFD700;
 }
 
 .hr-sobremi {
-    width: 20%;
+    width: 25%;
     border: none;
     height: 4px;
-    background: #ffffff;
+    background: #FFD700;
+    animation: glow 3s infinite;
 }
 
 .contenedor-sobremi {
@@ -255,7 +258,7 @@ a {
 }
 
 .baesics {
-    color: #00B97C;
+    color: #FFD700;
     font-size: 30px;
 }
 
@@ -267,10 +270,62 @@ a {
 
 .descargar-cv {
     background: black;
-    border: 2px solid #39FF14;
+    border: 2px solid #FFD700;
     padding: 5px 10px;
     border-radius: 8px;
-    color: #39FF14;
+    color: #FFD700;
     margin-top: 30px;
     margin-left: 60px;
+}
+
+/* Efectos futuristas */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px #000, 0 0 30px rgba(255, 215, 0, 0.5);
+}
+
+.iconos > div:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.descargar-cv:hover {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Animaciones modernas */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+    50% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
+    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.iconos > div {
+    animation: fadeInUp 1s ease-out;
+}
+
+.titulo {
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.h1-habilidades {
+    animation: fadeInUp 1s ease-out;
+}
+
+.sobremi {
+    animation: fadeInUp 1s ease-out;
 }
