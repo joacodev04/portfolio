@@ -199,6 +199,21 @@ a {
     animation: glow 3s infinite;
 }
 
+.frontend {
+    color: #FFD700;
+    font-size: 35px;
+}
+
+.backend {
+    color: #FFD700;
+    font-size: 35px;
+}
+
+.herramientas {
+    color: #FFD700;
+    font-size: 35px;
+}
+
 .iconos {
     margin-top: 100px;
     display: flex;
@@ -216,9 +231,23 @@ a {
     animation: glow 4s infinite;
 }
 
+.titulo-con-icono {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.titulo-con-icono svg {
+    flex-shrink: 0;
+    color: #FFD700;
+    stroke: #FFD700;
+}
+
 .iconos h2 {
     font-family: 'DM Sans', sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 .iconos i{
@@ -232,6 +261,69 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/* Fuentes Iconos */
+.html span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.css span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.js span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.react span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.py span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.sql span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400
+}
+
+.mongodb span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.restapi span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400
+}
+
+.git span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.github span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.figma span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.docker span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
 }
 
 /* Sobre mi */
